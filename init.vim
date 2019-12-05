@@ -28,7 +28,7 @@ set relativenumber
 set mouse=a
 set inccommand=split
 let mapleader='\<Space>\'
-noremap <F3> :NERDTreeToggle<CR>
+noremap <F2> :NERDTreeToggle<CR>
 
 filetype plugin indent on
 
