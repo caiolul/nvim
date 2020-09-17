@@ -43,9 +43,9 @@ Plug 'HerringtonDarkholme/yats.vim'
   " " most importantly you need a good color scheme to write good code :D
   Plug 'dikiaap/minimalist'
   "
-
 call plug#end()
 
+set encoding=UTF-8
 set number
 set hidden
 set mouse=a
@@ -53,6 +53,7 @@ set inccommand=split
 
 inoremap jk <ESC>
 nmap <F2> :NERDTreeToggle<CR>
+nmap <F3> :CocCommand explorer<CR>
 vmap ++ <plug>NERDCommenterToggle
 nmap ++ <plug>NERDCommenterToggle
 
