@@ -52,8 +52,7 @@ set mouse=a
 set inccommand=split
 
 inoremap jk <ESC>
-nmap <F2> :NERDTreeToggle<CR>
-nmap <F3> :CocCommand explorer<CR>
+nmap <A-e> :NERDTreeToggle<CR>
 vmap ++ <plug>NERDCommenterToggle
 nmap ++ <plug>NERDCommenterToggle
 
