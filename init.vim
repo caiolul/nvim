@@ -1,19 +1,14 @@
 call plug#begin()
-    
-Plug 'scrooloose/nerdtree'
-"Plug 'tsony-tsonev/nerdtree-git-plugin'
-Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
-Plug 'ryanoasis/vim-devicons'
-Plug 'airblade/vim-gitgutter'
-Plug 'ctrlpvim/ctrlp.vim' " fuzzy find files
-Plug 'scrooloose/nerdcommenter'
-"Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
-
-Plug 'christoomey/vim-tmux-navigator'
-
-Plug 'HerringtonDarkholme/yats.vim' 
-	Plug 'scrooloose/nerdtree'
+    Plug 'scrooloose/nerdtree'
+    Plug 'Xuyuanp/nerdtree-git-plugin'
+    Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+    Plug 'ryanoasis/vim-devicons'
+    Plug 'airblade/vim-gitgutter'
+    Plug 'ctrlpvim/ctrlp.vim' " fuzzy find files
+    Plug 'scrooloose/nerdcommenter'
+    Plug 'christoomey/vim-tmux-navigator'
+    Plug 'HerringtonDarkholme/yats.vim' 
+    Plug 'scrooloose/nerdtree'
 	Plug 'terryma/vim-multiple-cursors'
 	Plug 'sheerun/vim-polyglot'
 	Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
@@ -24,24 +19,24 @@ Plug 'HerringtonDarkholme/yats.vim'
     Plug 'sts10/vim-pink-moon'
     Plug 'https://github.com/joshdick/onedark.vim.git'
 	  " UI related
-  Plug 'chriskempson/base16-vim'
-  Plug 'vim-airline/vim-airline'
-  Plug 'vim-airline/vim-airline-themes'
+    Plug 'chriskempson/base16-vim'
+    Plug 'vim-airline/vim-airline'
+    Plug 'vim-airline/vim-airline-themes'
   "------------------------ COC ------------------------
   "" coc for tslinting, auto complete and prettier
-  Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
+    Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
   " coc extensions
  " "------------------------ VIM TSX ------------------------
   " " by default, if you open tsx file, neovim does not show syntax colors
   " " vim-tsx will do all the coloring for jsx in the .tsx file
-  Plug 'ianks/vim-tsx'
+    Plug 'ianks/vim-tsx'
   " "------------------------ VIM TSX ------------------------
   " " by default, if you open tsx file, neovim does not show syntax colors
   " " typescript-vim will do all the coloring for typescript keywords
-  Plug 'leafgarland/typescript-vim'
+    Plug 'leafgarland/typescript-vim'
   " "------------------------ THEME ------------------------
   " " most importantly you need a good color scheme to write good code :D
-  Plug 'dikiaap/minimalist'
+    Plug 'dikiaap/minimalist'
   "
 call plug#end()
 
@@ -80,6 +75,7 @@ let g:NERDTreeGitStatusWithFlags = 1
 
 
 let g:NERDTreeIgnore = ['^node_modules$']
+let g:NERDTreeShowHidden=1
 
 " vim-prettier
 "let g:prettier#quickfix_enabled = 0
