@@ -1,4 +1,9 @@
 call plug#begin()
+"Flutter plugins
+    Plug 'dart-lang/dart-vim-plugin'
+    Plug 'natebosch/vim-lsc'
+    Plug 'natebosch/vim-lsc-dart'
+    ""
     Plug 'scrooloose/nerdtree'
     Plug 'Xuyuanp/nerdtree-git-plugin'
     Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
@@ -45,13 +50,9 @@ call plug#begin()
   " "------------------------ THEME ------------------------
   " " most importantly you need a good color scheme to write good code :D
     Plug 'dikiaap/minimalist'
+    Plug 'bluz71/vim-nightfly-guicolors'
   "
 call plug#end()
-set exrc
-" always uses spaces instead of tab characters
-set expandtab
-" Highlight currently open buffer in NERDTree
-" coc config
 set hidden " Some servers have issues with backup files, see #649 set nobackup set nowritebackup " Better display for messages set cmdheight=2 " You will have bad experience for diagnostic messages when it's default 4000.
 set updatetime=300
 " don't give |ins-completion-menu| messages.
@@ -61,7 +62,7 @@ set signcolumn=yes
 syntax on
 syntax enable
 " colorscheme
-colorscheme onedark
+colorscheme nightfly
 let base16colorspace=256
 set smarttab
 set cindent
@@ -82,7 +83,6 @@ set ignorecase                    " ignore case when searching
 set smartcase                     " turn on smartcase
 " Tab and Indent configuration
 set expandtab
-set tabstop=4
 set shiftwidth=4
 " vim-autoformat
 set encoding=UTF-8
